@@ -426,14 +426,91 @@ th {
 
 
 
+
+
+
+
+
+
 /* custom styles */
 body {
-  background: hsl(25, 20%, 94%);
-  font-size: 1em;
-  line-height: 1.4;
+	margin: 0 auto;
+	max-width: 36em;
+  	background: hsl(120, 10%, 97%);
+  	font-size: 1em;
+  	line-height: 1.4;
+}
+#content {
+	padding: 0 2em;
+	margin: 3em 0;
 }
 
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 100%;
+}
 h1 {
 	font-family: futura-pt, sans-serif;
-	text-align: center
+	text-align: center;
 }
+p {
+  text-align: center;
+}
+
+/* custom lists */
+ul {
+	list-style: none;
+}
+li {
+	margin-bottom: .5em;
+}
+
+/* custom links */
+a {
+	border-bottom: 1px solid #069;
+}
+a:hover,
+a:active {
+	outline: 0;
+}
+a,
+a:visited {
+	color: #004d7a;
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+	border: 0;
+	color: #fff;
+	background: #069;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
