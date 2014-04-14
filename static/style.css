@@ -489,6 +489,16 @@ a:active {
 }
 
 
+@media only screen and (max-width: 800px) {
+  /* Style adjustments for viewports that meet the condition */
+  body {
+    width: 100%;
+  }
+  #content {
+    margin: 2em 0;
+  }
+}
+
 
 
 
