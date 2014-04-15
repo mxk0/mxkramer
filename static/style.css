@@ -436,20 +436,9 @@ th {
 body {
 	margin: 0 auto;
 	max-width: 28em;
-  	background: hsl(120, 10%, 97%);
-  	font-size: 1em;
-  	line-height: 1.4;
-}
-#content {
-	padding: 0 2em;
-	margin: 3em 0;
-}
-
-img.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 100%;
+	background: hsl(120, 10%, 97%);
+	font-size: 1em;
+	line-height: 1.4;
 }
 h1 {
 	font-family: futura-pt, sans-serif;
@@ -486,6 +475,33 @@ a:active {
 	border: 0;
 	color: #fff;
 	background: #069;
+}
+
+
+/* custom elements */
+#content {
+  padding: 0 2em;
+  margin: 3em 0;
+}
+.header {
+  position: relative;
+}
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
+}
+.stripe {
+  background: hsl(280, 80%, 20%);
+  height: 10px;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 3em;
+  z-index: 0;
 }
 
 
