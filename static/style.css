@@ -435,7 +435,7 @@ th {
 /* custom styles */
 body {
 	margin: 0 auto;
-	max-width: 36em;
+	max-width: 28em;
   	background: hsl(120, 10%, 97%);
   	font-size: 1em;
   	line-height: 1.4;
@@ -494,9 +494,9 @@ a:active {
   body {
     width: 100%;
   }
-  #content {
+/*  #content {
     margin: 2em 0;
-  }
+  }*/
 }
 
 
