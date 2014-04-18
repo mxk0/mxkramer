@@ -436,12 +436,11 @@ th {
 body {
 	margin: 0 auto;
 	max-width: 28em;
-/*	background: hsl(240, 10%, 97%);*/
+  font-family: futura-pt, sans-serif;
 	font-size: 1em;
 	line-height: 1.4;
 }
 h1 {
-	font-family: futura-pt, sans-serif;
 	text-align: center;
 }
 
