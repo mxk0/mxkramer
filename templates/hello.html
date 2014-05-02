@@ -3,12 +3,24 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Max Kramer</title>
-<meta name="description" content="Max Kramer's Face">
+<meta name="description" content="Max Kramer's Website">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <!-- CSS -->
 <link rel="stylesheet" href="../static/style.css">
 <!-- favicon -->
 <link rel="shortcut icon" href="../static/favicon.ico">
+
+<script type="text/javascript">
+
+	window.onload = function() {
+		document.getElementById("blurb").onmouseover = function() {
+			console.log("hai");
+			var dogeStrings = ["such cursor", "so interaction", "wow"];
+			this.innerHTML = dogeStrings[0];
+		};
+	};
+
+</script>
 
 <body>
 
@@ -24,6 +36,31 @@
 
 		<p>i'll be adding more here soon, but in the meantime you can find me on <a href="http://twitter.com/mxk0">twitter</a> or <a href="http://linkedin.com/pub/max-kramer/1a/816/79a/">linkedin</a>.</p>
 
+		<p>finally, please consider petting this friendly doge:</p>
+
+		<div class="footer">
+			
+			<div class="doge">
+				<img class="center" src="../static/doge.jpg" width="100" height="100" alt="un doge">
+				<span class="callout" id="blurb">wow</span>
+			</div>
+
+		</div>
+
 	</div>
 
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -446,7 +446,7 @@ h1 {
 
 /* custom lists */
 ul {
-	list-style: none;
+	list-style: square;
 }
 li {
 	margin-bottom: .5em;
@@ -486,18 +486,66 @@ img.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 100%;
   position: relative;
   z-index: 1;
 }
-.stripe {
-  background: hsl(280, 80%, 20%);
-  height: 10px;
-  width: 100%;
-  display: inline-block;
+.header img {
+  border-radius: 100%;
+}
+.footer {
+  display: block;
+  text-align: center;
+}
+.doge,
+.callout {
+  position: relative;
+  white-space: nowrap;
+}
+.doge {
+  max-width: 100px;
+  max-height: 100px;
+  margin: auto;
+}
+.doge img {
+  display: inline;
+  vertical-align: middle;
+  border: 0;
+}
+.doge img:hover {
+  cursor:grab;
+  cursor:-moz-grab;
+  cursor:-webkit-grab;
+}
+.doge img:active {
+  cursor:grabbing;
+  cursor:-moz-grabbing;
+  cursor:-webkit-grabbing;
+}
+.callout {
+  display: none;
+  vertical-align: middle;
+  padding: 5px;
+  border-radius: 3px;
+  background: #666;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  margin-left: 15px;
+  font-size: .8235em;
+  text-align: center;
+  line-height: 1.2;
+}
+.callout:before {
+  content: "";
+  border-width: 5px 5px 5px 0;
+  border-style: solid;
+  border-color: transparent #666;
+  border-color: transparent rgba(0,0,0,.5);
   position: absolute;
-  top: 3em;
-  z-index: 0;
+  top: 31%;
+  left: -5px;
+}
+.doge:hover .callout {
+  display: inline-block;
 }
 
 
