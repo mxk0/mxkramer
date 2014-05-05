@@ -12,16 +12,21 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			$('#un-doge').bind('mouseover', function() {
-			   $('#blurb').text(randomString(dogeStrings));
-			})
+			var dogeStrings = ['such cursor', 'so interaction', 'much friendly', 'wow']
+			i = 0 
+
+			var randomDoge = function() {
+				$('#blurb').text(dogeStrings[i]);
+			   	if (i < 3) {
+			   		i++
+			   	}
+			   	else {
+			   		i = 0
+			   	}
+			};
+
+			$('#un-doge').bind('mouseover', randomDoge);
 		});
-
-		var dogeStrings = ['such cursor', 'so interaction', 'wow', 'much friendly']
-
-		var randomString = function(array) {
-			return array[Math.floor(Math.random() * array.length)];
-		}; 
 	</script>
 </head>
 
@@ -45,7 +50,7 @@
 			
 			<div class="doge">
 				<img class="center" id="un-doge" src="../static/doge.jpg" width="100" height="100" alt="un doge">
-				<span class="callout" id="blurb">wow</span>
+				<span class="callout" id="blurb"></span>
 			</div>
 
 		</div>
