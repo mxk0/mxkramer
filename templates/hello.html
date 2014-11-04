@@ -10,6 +10,21 @@
 	<!-- favicon -->
 	<link rel="shortcut icon" href="/static/favicon.ico">
 	<script type="text/javascript" src="/static/jquery-1.11.1.min.js"></script>
+	<!-- Snowplow starts plowing -->
+	<script type="text/javascript">
+	;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+	p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+	};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+	n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d1fc8wv8zag5ca.cloudfront.net/2.0.0/sp.js","snowplow"));
+
+	window.snowplow('newTracker', 'cf', '{{MY-COLLECTOR-URI}}', { // Initialise a tracker
+	  appId: '{{MY-SITE-ID}}',
+	  cookieDomain: '{{MY-COOKIE-DOMAIN}}'
+	});
+
+	window.snowplow('trackPageView');
+	</script>
+	<!-- Snowplow stops plowing -->
 	<script>
 		$(document).ready(function(){
 			var dogeStrings = ['such cursor', 'so interaction', 'much friendly', 'wow']
